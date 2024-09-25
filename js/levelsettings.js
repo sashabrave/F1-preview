@@ -29,7 +29,7 @@ ROAD_INFO[0] = [
    
     {"roadtype": ROAD.TYPE.FINAL, "length":ROAD.LENGTH.LONG-12,      }
 ]
-LEVEL_INFO[0] = {   "time":70000, "num_cars":0, "num_laps":5,
+LEVEL_INFO[0] = {   "time":70000, "num_cars":0, "num_laps":2,
                     "minimap":{x:0,y:0,scale:0.48,rot:-90},
                     "terrain":{ "roadbounds":2, "num_lanes":1, "adherence":1, "max_inertia":0.03, 
                                 "color": {
@@ -104,7 +104,7 @@ ROAD_INFO[1] = [
     {"roadtype": ROAD.TYPE.FINAL, "length":ROAD.LENGTH.MEDIUM-24}
 ]
 
-LEVEL_INFO[1] = {   "time":65000, "num_cars":0, "num_laps":5,
+LEVEL_INFO[1] = {   "time":65000, "num_cars":0, "num_laps":2,
                     "minimap":{x:0,y:18,scale:0.54,rot:-30},
                     "terrain":{ "roadbounds":2, "num_lanes":1, "adherence":1, "max_inertia":0.03, 
                                 "color": {
@@ -168,7 +168,7 @@ ROAD_INFO[2] = [
 
     {"roadtype": ROAD.TYPE.FINAL, "length":ROAD.LENGTH.MEDIUM+28,      }
 ]
-LEVEL_INFO[2] = {   "time":70000, "num_cars":0, "num_laps":5,
+LEVEL_INFO[2] = {   "time":70000, "num_cars":0, "num_laps":2,
                     "minimap":{x:0,y:0,scale:0.60,rot:0},
                     "terrain":{ "roadbounds":2, "num_lanes":1, "adherence":1, "max_inertia":0.03, 
                                 "color": {
