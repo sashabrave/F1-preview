@@ -80,7 +80,7 @@ var MIN_RANK_FOR_WIN = 3;
 var PLAYER_CAR_TYPE = 0;
 var TYPE_CAR_IN_GAME =[
     
-    PLAYER_CAR_TYPE,0,
+    PLAYER_CAR_TYPE,1,
     2,
     3,
     4,
