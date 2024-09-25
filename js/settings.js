@@ -11,7 +11,7 @@ var DISABLE_SOUND_MOBILE = false;
 
 var GAME_NAME = "formula_rush";
 
-var PRIMARY_FONT = "alegreya_sans_scblack";
+var PRIMARY_FONT = "Poppins";
 var SECONDARY_FONT = "Digital";
 var THIRD_FONT = "ArialBold"
 var PRIMARY_FONT_COLOUR = "#000000";
