@@ -14,7 +14,7 @@ function CPreloader() {
         s_oSpriteLibrary.init(this._onImagesLoaded, this._onAllImagesLoaded, this);
         s_oSpriteLibrary.addSprite("progress_bar", "./sprites/progress_bar.png");
         //s_oSpriteLibrary.addSprite("200x200", "./sprites/200x200.jpg");
-        s_oSpriteLibrary.addSprite("bg_menu", "./sprites/bg_menu.jpg");
+        s_oSpriteLibrary.addSprite("bg_menu", "./sprites/bg_menu.webp");
         s_oSpriteLibrary.addSprite("but_start", "./sprites/but_start.png");
         s_oSpriteLibrary.loadSprites();
 

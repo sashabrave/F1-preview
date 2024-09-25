@@ -145,9 +145,9 @@ function CMain(oData){
         s_oSpriteLibrary.addSprite("but_yes","./sprites/but_yes.png");
         s_oSpriteLibrary.addSprite("but_delete_saving","./sprites/but_delete_saving.png");
         
-        s_oSpriteLibrary.addSprite("bg_menu","./sprites/bg_menu.jpg"); 
+        s_oSpriteLibrary.addSprite("bg_menu","./sprites/bg_menu.webp"); 
         
-        s_oSpriteLibrary.addSprite("logo_menu","./sprites/logo_menu.png");
+        s_oSpriteLibrary.addSprite("logo_menu","./sprites/logo_menu.webp");
         s_oSpriteLibrary.addSprite("but_play","./sprites/but_play.png");
 
         ////////////
@@ -157,9 +157,9 @@ function CMain(oData){
 
         for(var i=0; i<NUM_WORLDS; i++){
             s_oSpriteLibrary.addSprite("w"+i+"_patch","./sprites/backgrounds/world_"+i+"/patch.png");
-            s_oSpriteLibrary.addSprite("w"+i+"_bg0","./sprites/backgrounds/world_"+i+"/bg0.png");
-            s_oSpriteLibrary.addSprite("w"+i+"_bg1","./sprites/backgrounds/world_"+i+"/bg1.png");
-            s_oSpriteLibrary.addSprite("w"+i+"_bg2","./sprites/backgrounds/world_"+i+"/bg2.png");
+            s_oSpriteLibrary.addSprite("w"+i+"_bg0","./sprites/backgrounds/world_"+i+"/bg0.webp");
+            s_oSpriteLibrary.addSprite("w"+i+"_bg1","./sprites/backgrounds/world_"+i+"/bg1.webp");
+            s_oSpriteLibrary.addSprite("w"+i+"_bg2","./sprites/backgrounds/world_"+i+"/bg2.webp");
 
         }
         
