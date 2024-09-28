@@ -121,26 +121,26 @@ function CInterface(){
             
             ///////////// MOVEMENT
             var oSprite = s_oSpriteLibrary.getSprite('key_up');
-            _pStartPosUp = {x: CANVAS_WIDTH-iX +oSprite.width/2, y: iY};
+            _pStartPosUp = {x: CANVAS_WIDTH-iX +oSprite.width/2, y: iY-350};
             _oButUp = new CGfxButton(_pStartPosUp.x, _pStartPosUp.y, oSprite, oInterfaceContainer);
             _oButUp.addEventListenerWithParams(ON_MOUSE_UP, s_oGame.onKeyUp, s_oGame, KEY_UP);
             _oButUp.addEventListenerWithParams(ON_MOUSE_DOWN, s_oGame.onKeyDown, s_oGame, KEY_UP);
             
             var oSprite = s_oSpriteLibrary.getSprite('key_down');
-            _pStartPosDown = {x: CANVAS_WIDTH-iX -oSprite.width/2, y: iY};
+            _pStartPosDown = {x: CANVAS_WIDTH / 2 , y: CANVAS_HEIGHT - oSprite.height +100};  // Центр экрана по X
             _oButDown = new CGfxButton(_pStartPosDown.x, _pStartPosDown.y, oSprite, oInterfaceContainer);
             _oButDown.addEventListenerWithParams(ON_MOUSE_UP, s_oGame.onKeyUp, s_oGame, KEY_DOWN);
             _oButDown.addEventListenerWithParams(ON_MOUSE_DOWN, s_oGame.onKeyDown, s_oGame, KEY_DOWN);
             
             ///////////// DIRECTION
             var oSprite = s_oSpriteLibrary.getSprite('key_left');
-            _pStartPosLeft = {x:iX-oSprite.width/2, y: iY};
+            _pStartPosLeft = {x:iX-oSprite.width/2, y: iY-160};
             _oButLeft = new CGfxButton(_pStartPosLeft.x, _pStartPosLeft.y, oSprite, oInterfaceContainer);
             _oButLeft.addEventListenerWithParams(ON_MOUSE_UP, s_oGame.onKeyUp, s_oGame, KEY_LEFT);
             _oButLeft.addEventListenerWithParams(ON_MOUSE_DOWN, s_oGame.onKeyDown, s_oGame, KEY_LEFT);
             
             var oSprite = s_oSpriteLibrary.getSprite('key_right');
-            _pStartPosRight = {x:iX+oSprite.width/2, y: iY};
+            _pStartPosRight = {x: CANVAS_WIDTH-iX +oSprite.width/2, y: iY-160};
             _oButRight = new CGfxButton(_pStartPosRight.x, _pStartPosRight.y, oSprite, oInterfaceContainer);
             _oButRight.addEventListenerWithParams(ON_MOUSE_UP, s_oGame.onKeyUp, s_oGame, KEY_RIGHT);
             _oButRight.addEventListenerWithParams(ON_MOUSE_DOWN, s_oGame.onKeyDown, s_oGame, KEY_RIGHT);
@@ -174,9 +174,9 @@ function CInterface(){
 
         if(s_bMobile){
             _oButUp.setPosition(_pStartPosUp.x - s_iOffsetX, _pStartPosUp.y - s_iOffsetY);
-            _oButDown.setPosition(_pStartPosDown.x - s_iOffsetX, _pStartPosDown.y - s_iOffsetY);
+            _oButDown.setPosition(_pStartPosDown.x, _pStartPosDown.y);  // Убираем оффсеты для кнопки "тормоз"
             _oButLeft.setPosition(_pStartPosLeft.x + s_iOffsetX, _pStartPosLeft.y - s_iOffsetY);
-            _oButRight.setPosition(_pStartPosRight.x + s_iOffsetX, _pStartPosRight.y - s_iOffsetY);
+            _oButRight.setPosition(_pStartPosRight.x - s_iOffsetX, _pStartPosRight.y - s_iOffsetY);
         }
 
         _oTachometer.updateOffset(s_iOffsetX, s_iOffsetY);
