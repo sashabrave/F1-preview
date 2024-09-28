@@ -559,7 +559,7 @@ function CPlayer(iX, iY, oParentContainer){
             setTimeout(() => {
                 _bKeyAccelerate = true;  // Включаем автоускорение после задержки
                 _iCurSpeed = this._accelerate(_iCurSpeed, _iAccelerationRate, dt);  // Возвращаем скорость
-            }, 500);  // Задержка 0.5 сек
+            }, 500);  // Задержка 0.3 сек
            
           if(_iCurSpeed > 0 && !soundPlaying(s_aSounds["engine_reverse"])){
                 stopSound(s_aSounds["brake"]);
