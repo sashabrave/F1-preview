@@ -118,6 +118,7 @@ function CInterface(){
         if(s_bMobile){
             var iY = CANVAS_HEIGHT-300;
             var iX = 180;
+            var scaleFactor = 1.5;  // Коэффициент увеличения
             
             ///////////// MOVEMENT
             var oSprite = s_oSpriteLibrary.getSprite('key_up');
@@ -134,6 +135,8 @@ function CInterface(){
             
             ///////////// DIRECTION
             var oSprite = s_oSpriteLibrary.getSprite('key_left');
+            oSprite.scaleX = scaleFactor;  // Увеличиваем ширину
+oSprite.scaleY = scaleFactor;  // Увеличиваем высоту
             _pStartPosLeft = {x:iX-oSprite.width/2, y: iY-160};
             _oButLeft = new CGfxButton(_pStartPosLeft.x, _pStartPosLeft.y, oSprite, oInterfaceContainer);
             _oButLeft.addEventListenerWithParams(ON_MOUSE_UP, s_oGame.onKeyUp, s_oGame, KEY_LEFT);
