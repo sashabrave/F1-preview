@@ -76,7 +76,7 @@ function CHelpPanel(){
             oKeys.scaleX = oKeys.scaleY = 0.7;
             _oPanelContainer.addChild(oKeys);
 
-            var oTex3Pos = {x: -250, y: -180};
+
 
 
             
