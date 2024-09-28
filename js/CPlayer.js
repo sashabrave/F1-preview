@@ -85,7 +85,7 @@ function CPlayer(iX, iY, oParentContainer){
     this.reset = function(){
         _bKeyLeft = false;
         _bKeyRight = false;
-        _bKeyAccelerate = false;
+        _bKeyAccelerate = true;
         _bKeyBrake = false;
         _bDamageAnim = false;
         
@@ -514,7 +514,7 @@ function CPlayer(iX, iY, oParentContainer){
         }
 
         
-        _iAccelerationRate = linearFunction(_iCurSpeed, 0,PLAYER_MAX_SPEED, PLAYER_ACCELERATION, 0);
+        _iAccelerationRate = linearFunction(_iCurSpeed, 0,PLAYER_MAX_SPEED, PLAYER_ACCELERATION, 1);
 
         if (_bKeyAccelerate){
           _iCurSpeed = this._accelerate(_iCurSpeed, _iAccelerationRate, dt);
