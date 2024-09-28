@@ -118,7 +118,7 @@ function CInterface(){
         if(s_bMobile){
             var iY = CANVAS_HEIGHT-300;
             var iX = 180;
-            var scaleFactor = 1.2;  // Коэффициент увеличения
+            var scaleFactor = 1;  // Коэффициент увеличения
             
             ///////////// MOVEMENT
             var oSprite = s_oSpriteLibrary.getSprite('key_up');
