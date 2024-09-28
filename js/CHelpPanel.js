@@ -3,6 +3,7 @@ function CHelpPanel(){
     
     var _oText1;
     var _oText2;
+    var _oText3;
 
     var _oFade;
     var _oPanelContainer;
@@ -74,15 +75,9 @@ function CHelpPanel(){
             oKeys.regY = oSprite.height/2;
             oKeys.scaleX = oKeys.scaleY = 0.7;
             _oPanelContainer.addChild(oKeys);
-            
-            var oSprite = s_oSpriteLibrary.getSprite('key_up');
-            var oKeys = createBitmap(oSprite);
-            oKeys.x = 170;
-            oKeys.y = -70;
-            oKeys.regX = oSprite.width/2;
-            oKeys.regY = oSprite.height/2;
-            oKeys.scaleX = oKeys.scaleY = 0.7;
-            _oPanelContainer.addChild(oKeys);
+
+            var oTex3Pos = {x: -250, y: -180};
+
 
             
         }else {

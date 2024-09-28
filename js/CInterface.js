@@ -176,7 +176,7 @@ oSprite.scaleY = scaleFactor;  // Увеличиваем высоту
         _oGUIExpandible.refreshPos();
 
         if(s_bMobile){
-            _oButUp.setPosition(_pStartPosUp.x - s_iOffsetX, _pStartPosUp.y - s_iOffsetY);
+ 
             _oButDown.setPosition(_pStartPosDown.x, _pStartPosDown.y);  // Убираем оффсеты для кнопки "тормоз"
             _oButLeft.setPosition(_pStartPosLeft.x + s_iOffsetX, _pStartPosLeft.y - s_iOffsetY);
             _oButRight.setPosition(_pStartPosRight.x - s_iOffsetX, _pStartPosRight.y - s_iOffsetY);
