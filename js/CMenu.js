@@ -6,7 +6,7 @@ function CMenu(){
     var _oCreditsBut;
     var _oButFullscreen;
     var _oButDelete;
-    var _oScoreText;
+
     var _oScoreContainer;
     var _oLogo;
     
@@ -49,29 +49,11 @@ function CMenu(){
         _oScoreContainer.y = _oButPlay.getY()+210;
         s_oStage.addChild(_oScoreContainer);
         
-        var oSprite = s_oSpriteLibrary.getSprite('star');
-        var oStar = createBitmap(oSprite);
-        oStar.regX = oSprite.width/2;
-        oStar.regY = oSprite.height/2;
-        _oScoreContainer.addChild(oStar);
+  
         
-        var iTotalScore = 0;
-        for(var i=0; i<s_aLevelScore.length; i++){
-            iTotalScore += s_aLevelScore[i];
-            
-        }
-
-        _oScoreText =  new CTLText(_oScoreContainer, 
-                    50, -50, 250, 100, 
-                    80, "left", "#fff", PRIMARY_FONT, 1,
-                    0, 0,
-                    iTotalScore+"",
-                    true, true, false,
-                    false );
-        _oScoreText.setStroke(10,"#000");
-
+   
         ///CENTER THE TEXT
-        _oScoreContainer.x = _oButPlay.getX() - _oScoreText.getTextWidth()/2;
+
 
         var oSprite = s_oSpriteLibrary.getSprite('but_credits');
         _pStartPosCredits = {x: (oSprite.width/2) + 10, y: (oSprite.height/2) + 10};            
@@ -147,15 +129,12 @@ function CMenu(){
     this.refreshButtonPos = function(){
         if(s_bLandscape){
             _oButPlay.setPosition(CANVAS_WIDTH/2, CANVAS_HEIGHT-150-s_iOffsetY);
-            _oScoreContainer.x = s_iOffsetX + 60;
-            _oScoreContainer.y = CANVAS_HEIGHT - 60 -s_iOffsetY;
+          
             
             _oLogo.y = CANVAS_HEIGHT/2-310;
         }else{
             _oButPlay.setPosition(CANVAS_WIDTH/2, CANVAS_HEIGHT/2 + 500);
-            _oScoreContainer.y = _oButPlay.getY()+210;
-            _oScoreContainer.x = _oButPlay.getX() - _oScoreText.getTextWidth()/2;
-            
+
             _oLogo.y = CANVAS_HEIGHT/2-350;
         }
     
@@ -201,7 +180,7 @@ function CMenu(){
         var oPanel = new CAreYouSurePanel(s_oMenu.deleteSavings);
         oPanel.changeMessage(TEXT_SAVE_REMOVE, 24);
         
-        _oScoreText.refreshText(0);
+
     };
     
     this.deleteSavings = function(){
