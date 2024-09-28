@@ -20,7 +20,7 @@ function CGfxButton(iXPos,iYPos,oSprite, oParentContainer){
         _bDisabled = false;
         _bScalable = true;
         
-        _iScaleFactor = 1;
+        _iScaleFactor = 1.2;
         
         _aCbCompleted=new Array();
         _aCbOwner =new Array();
