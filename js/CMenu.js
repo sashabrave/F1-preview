@@ -35,7 +35,7 @@ function CMenu(){
         _oLogo.regY = oSprite.height/2;
         _oLogo.x = CANVAS_WIDTH/2;
         _oLogo.y = CANVAS_HEIGHT/2-350;
-        _oLogo.scale = 0.69;
+        _oLogo.scale = 0.6;
         s_oStage.addChild(_oLogo);
 
         var oSpriteStart = s_oSpriteLibrary.getSprite('but_play');
