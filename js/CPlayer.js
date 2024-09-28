@@ -542,7 +542,7 @@ function CPlayer(iX, iY, oParentContainer){
         // Если нажата клавиша тормоза
         
         }else if (_bKeyBrake) {
-          _bKeyAccelerate = true;  // Включаем автоускорение
+          _bKeyAccelerate = false;  // Включаем автоускорение
           _iCurSpeed = this._accelerate(_iCurSpeed, _iBrakingRate, dt);  // Применяем торможение
           
             if(_iCurSpeed > 0){
@@ -559,8 +559,8 @@ function CPlayer(iX, iY, oParentContainer){
             setTimeout(() => {
                 _bKeyAccelerate = true;  // Включаем автоускорение после задержки
                 _iCurSpeed = this._accelerate(_iCurSpeed, _iAccelerationRate, dt);  // Возвращаем скорость
-            }, 1000);  // Задержка 1 секунда (1000 миллисекунд)
-          
+            }, 500);  // Задержка 0.5 сек
+           
           if(_iCurSpeed > 0 && !soundPlaying(s_aSounds["engine_reverse"])){
                 stopSound(s_aSounds["brake"]);
                 stopSound(s_aSounds["engine_stall"]);
