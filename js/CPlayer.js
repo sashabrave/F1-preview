@@ -1,3 +1,4 @@
+
 function CPlayer(iX, iY, oParentContainer){
     var _bKeyLeft;
     var _bKeyRight;
@@ -276,10 +277,10 @@ function CPlayer(iX, iY, oParentContainer){
 
    
     this.autoAcceleration = function(){
-        /*
+        
         if(!_bKeyBrake){
             this.moveAccelerate(); 
-        }*/
+        }
     };
     
     this.autoPilot = function(){
